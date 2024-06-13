@@ -1,0 +1,151 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+
+    --primary-900: hsl(264, 67%, 35%);
+    --primary-800: hsl(262, 83%, 58%);
+    --primary-300: hsl(252, 95%, 85%);
+    --primary-100: hsl(251, 91%, 95%);
+    --primary-50: hsl(250, 100%, 98%);
+
+    --secondary-900: hsl(185, 32%, 64%);
+    --secondary-600: hsl(183, 74%, 43%);
+    --secondary-300: hsl(184, 74%, 96%);
+    --secondary-100: hsl(183, 87%, 91%);
+    --secondary-50: hsl(193, 100%, 96%);
+
+    --neutral-900: hsl(221, 39%, 11%);
+    --neutral-800: hsl(251, 28%, 17%);
+    --neutral-700: hsl(217, 19%, 27%);
+    --neutral-600: hsl(251, 14%, 34%);
+    --neutral-500: hsl(220, 9%, 46%);
+    --neutral-400: hsl(281, 11%, 65%);
+    --neutral-300: hsl(216, 12%, 84%);
+    --neutral-200: hsl(220, 13%, 91%);
+    --neutral-100: hsl(220, 14%, 96%);
+    --neutral-50: hsl(210, 20%, 98%);
+
+    --fs-900: 3.75rem;
+    --fs-700: 3rem;
+    --fs-800: 3.25rem;
+    --fs-700: 2.25rem;
+    --fs-600: 1.875rem;
+    --fs-500: 1.5rem;
+    --fs-500: 1.125rem;
+    --fs-400: 1rem;
+
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-md: 500;
+    --fw-regular: 400;
+}
+
+/* Import typo */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Global settings */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--neutral-700);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    font-weight: var(--fw-bold);
+}
+
+/* Typo */
+h1 {
+    font-size: var(--fs-900);
+    color: var(--neutral-900);
+}
+
+h2 {
+    font-size: var(--fs-800);
+    color: var(--neutral-900);
+}
+
+h3 {
+    font-size: var(--fs-600);
+    color: var(--neutral-900);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+}
+
+.body {
+    font-size: var(--fs-500);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* Spacing */
+
+.container {
+    padding: 120px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.row {
+    max-width: 1216px;
+}
+
+.button-group {
+    display: flex;
+    gap: .5rem;
+}
+
+/* Sizing */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Hero section*/
+.section-hero {
+    background-image: url('/images/hero-background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 3.75rem;
+}
+
+.section-brands > .row {
+    border-top: 1px solid var(--neutral-200);
+    border-bottom: 1px solid var(--neutral-200);
+    margin: 16px auto;
+    padding: auto 160px;
+}
+
+.hero-image {
+    max-width: 488px;
+    margin: auto;
+}
+
+.content-brands {
+    display: flex;
+    justify-content: center;
+    padding: 60px 120px;
+    gap: 32px;
+}
+
+.logo img {
+    max-height: 28px;
+}
